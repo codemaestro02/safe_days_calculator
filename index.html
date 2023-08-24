@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Safe Days Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="tool-title">
+                <h1>Safe Days Calculator</h1>
+            </div>
+            <div class="box">
+                <form action="/" method="get">
+                    <div class="first-day">
+                        <label for="first-day">First Day Of Your Last Menstrual Period (LMP)</label>
+                        <input onfocus="(this. type='date')"
+                        placeholder="Click to pick a date" name="first-day" id="first-day">
+                    </div>
+                    
+                    <div class="cycle-length">
+                        <div class="shortest-cycle">
+                            <label for="shortest-cycle">Shortest Cycle Length</label>
+                            <input type="number" placeholder="Days..." name="shortest-cycle" id="shortest-cycle" min="23" max="35">
+                        </div>
+                        <div class="longest-cycle">
+                            <label for="longest-cycle">Longest Cycle Length</label>
+                            <input type="number" placeholder="Days..." name="longest-cycle" id="longest-cycle" min="23" max="35">
+                        </div>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit">Calculate Safe Days</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
